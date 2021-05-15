@@ -1,0 +1,109 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#switch {
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+    padding: 0.5em 0.5em;
+    border-radius: 10px;
+    background-color: purple;
+    color: white;
+    border: white 2px;
+}
+
+#switch a {
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+    margin: 2em auto;
+}
+
+#clockFace {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+    left: 0;
+    right: 0;
+}
+
+#digital {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#digitalClock {
+    font-family: 'Playfair Display', serif;
+    font-size: 4em;
+    display: block;
+}
+
+#analog {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 2em auto;
+}
+
+#hourHand {
+    position: absolute;
+    width: 13px;
+    height: 130px;
+    background-color:purple;
+    border-radius: 2em;
+    top: 120px;
+    transform-origin: bottom center;
+}
+
+#minuteHand {
+    position: absolute;
+    width: 10px;
+    height: 200px;
+    background-color: purple;
+    border-radius: 2em;
+    top: 50px;
+    transform-origin: bottom center;
+}
+
+#secondHand {
+    position: absolute;
+    width: 3px;
+    height: 180px;
+    background-color:black;
+    border-radius: 2em;
+    top: 70px;
+    transform-origin: bottom center;
+}
+
+.hidden {
+    display: none;
+}
+
+#centreCircle {
+    position: absolute;
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 240px;
+}
