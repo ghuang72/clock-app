@@ -8,7 +8,7 @@ function getTime() {
     seconds = convertMinSec(seconds);
     console.log(`${hour[0]}:${minute}:${seconds} ${hour[1]}`);
     // console.log(`${hour}:${minute}:${seconds}`);
-    setInterval(function () { getTime(); }, 1000);
+    // setInterval(function () { getTime(); }, 1000);
     document.getElementById("digitalClock").innerHTML = `${hour[0]}:${minute}:${seconds} ${hour[1]}`;
 }
 
